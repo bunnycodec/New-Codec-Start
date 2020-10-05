@@ -1,79 +1,133 @@
 @import './footer';
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+* {
+  box-sizing: border-box;
+}
+
+.code-container {
   background-image: linear-gradient(114.2deg, rgba(121, 194, 243, 1) 22.6%, rgba(255, 180, 239, 1) 67.7%);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.themes-stack>button {
-  outline: none;
-}
+header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-.theme1 {
-  background-image: linear-gradient(114.2deg, rgba(121, 194, 243, 1) 22.6%, rgba(255, 180, 239, 1) 67.7%);
-  transition: 0.2s ease-in-out;
+  .theme1 {
+    outline: none;
+    background-image: linear-gradient(114.2deg, rgba(121, 194, 243, 1) 22.6%, rgba(255, 180, 239, 1) 67.7%);
+    transition: 0.2s ease-in-out;
 
-  &:hover {
-    transform: scale(1.2);
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .theme2 {
+    outline: none;
+    background-image: linear-gradient(109.6deg, rgba(48, 207, 208, 1) 11.2%, rgba(51, 8, 103, 1) 92.5%);
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .theme3 {
+    outline: none;
+    background-image: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .theme4 {
+    outline: none;
+    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .theme5 {
+    outline: none;
+    background-image: linear-gradient(109.6deg, rgba(5, 84, 94, 1) 16%, #bbb 91.1%);
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .theme6 {
+    outline: none;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .theme7 {
+    outline: none;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 229, 168, 1) 0%, rgba(251, 174, 222, 1) 100.7%);
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .theme8 {
+    outline: none;
+    background-image: radial-gradient(circle 929px at 0.6% 1.3%, rgba(248, 251, 10, 1) 0%, rgba(248, 47, 47, 1) 82.6%);
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .theme9 {
+    outline: none;
+    background-image: linear-gradient(111.1deg, rgba(0, 40, 70, 1) -4.8%, rgba(255, 115, 115, 1) 82.7%, rgba(255, 175, 123, 1) 97.2%);
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .theme10 {
+    outline: none;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
 
-.theme2 {
-  background-image: linear-gradient(109.6deg, rgba(48, 207, 208, 1) 11.2%, rgba(51, 8, 103, 1) 92.5%);
-  transition: 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.2);
-  }
-}
-
-.theme3 {
-  background-image: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
-  transition: 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.2);
-  }
-}
-
-.theme4 {
-  background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
-  transition: 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.2);
-  }
-}
-
-.theme5 {
-  background-image: linear-gradient(109.6deg, rgba(5, 84, 94, 1) 16%, #bbb 91.1%);
-  transition: 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.2);
-  }
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+main {
+  flex: 1 1 auto;
 
   .content {
-    width: 70%;
-    position: relative;
+    width: 60vw;
     background: rgba(1, 1, 1, 0.2);
-    transform: translate(-50%, -50%);
-    top: 40%;
-    left: 55%;
-
     h1 {
+      font-size: calc(1.2vw + 2vh);
       letter-spacing: 0.3em;
       text-transform: uppercase;
       background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
