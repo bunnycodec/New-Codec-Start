@@ -11,7 +11,7 @@ html {
   background-size: cover;
 }
 
-.themes-stack > button {
+.themes-stack>button {
   outline: none;
 }
 
@@ -64,6 +64,7 @@ html {
   width: 100%;
   height: 100%;
   position: absolute;
+
   .content {
     width: 70%;
     position: relative;
@@ -71,10 +72,10 @@ html {
     transform: translate(-50%, -50%);
     top: 40%;
     left: 55%;
+
     h1 {
       letter-spacing: 0.3em;
       text-transform: uppercase;
-      background-color: #FF3CAC;
       background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
